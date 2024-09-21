@@ -1,9 +1,7 @@
 package com.exercises.RestTemplate.service;
 
 import com.exercises.RestTemplate.dto.UserDTO;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
