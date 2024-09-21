@@ -26,6 +26,12 @@ public class UserService {
         return Arrays.asList(response);
     }
 
+    public UserDTO getUserId(Integer id) {
+        UserDTO response = restTemplate.getForObject (basePath + "/user/" + id, UserDTO.class);
+        if (response == null) throw new AssertionError();
+        return response;
+    }
+
     public void saveUser(UserDTO user) {
         restTemplate.postForObject(basePath + "/user", user, UserDTO.class);
     }
